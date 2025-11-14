@@ -14,19 +14,20 @@ body{
 }
 
 .BackToTop{
-    display: none;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border: 2px solid black;
     background-color: aliceblue;
     border-radius: 500px;
     position: fixed;
     bottom: 8%;
     right: 5%;
-    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .BackToTop--show{
 
-    display: inline;
+    display: inline-block;
 }

@@ -5,9 +5,13 @@ body{
     font-size: 16px;
 }
 
+.menu__toggle{
+    display: none;
+}
 @media (max-width : 600px){
 
     .menu__toggle{
+        display: block;
         position: absolute;
         top: 20px;
         right: 20%;

@@ -15,7 +15,7 @@ if(Tabs){
 }
 
 function Opentabs(event){
-    event.preventDefault();
+   /* event.preventDefault();*/
     const Active=document.querySelector(".Tabs__element--active");
 
     Active.classList.remove("Tabs__element--active");

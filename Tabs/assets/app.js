@@ -26,4 +26,9 @@ function tabTrigger(event){
     const tabSelectID = event.currentTarget.getAttribute("href");
     const tabSelect = parentTab.querySelector(tabSelectID);
     tabSelect.classList.add("tab__content--active");
+
 }
+// definir taille du bloc//
+const activeTabA = document.querySelector('.tab--a .tab__content--active');
+const tabContainerA= document.querySelector('.tab--a .tab__container');
+tabContainerA.style.height = activeTabA.offsetHeight + 'px';

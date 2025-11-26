@@ -27,8 +27,20 @@ function tabTrigger(event){
     const tabSelect = parentTab.querySelector(tabSelectID);
     tabSelect.classList.add("tab__content--active");
 
-}
-// definir taille du bloc//
+    if (parentTab.classList.contains('tab--a')){
+        // definir taille du bloc//
+        const tabContainerA= document.querySelector('.tab--a .tab__container');
+        tabContainerA.style.height = tabSelect.offsetHeight + 'px';
+    }
+}           
 const activeTabA = document.querySelector('.tab--a .tab__content--active');
-const tabContainerA= document.querySelector('.tab--a .tab__container');
+const tabContainerA = document.querySelector('.tab--a .tab__container');
 tabContainerA.style.height = activeTabA.offsetHeight + 'px';
+
+const activeTabB = document.querySelector('.tab--b .tab__content--active');
+const tabContainerB = document.querySelector('.tab--b .tab__container');
+tabContainerB.style.height = activeTabB.offsetHeight + 'px';
+
+
+
+ 

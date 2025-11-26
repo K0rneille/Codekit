@@ -32,6 +32,12 @@ function tabTrigger(event){
         const tabContainerA= document.querySelector('.tab--a .tab__container');
         tabContainerA.style.height = tabSelect.offsetHeight + 'px';
     }
+
+    if (parentTab.classList.contains('tab--b')){
+        // definir taille du bloc//
+        const tabContainerB= document.querySelector('.tab--b .tab__container');
+        tabContainerB.style.height = tabSelect.offsetHeight + 'px';
+    }
 }           
 const activeTabA = document.querySelector('.tab--a .tab__content--active');
 const tabContainerA = document.querySelector('.tab--a .tab__container');
@@ -40,7 +46,3 @@ tabContainerA.style.height = activeTabA.offsetHeight + 'px';
 const activeTabB = document.querySelector('.tab--b .tab__content--active');
 const tabContainerB = document.querySelector('.tab--b .tab__container');
 tabContainerB.style.height = activeTabB.offsetHeight + 'px';
-
-
-
- 

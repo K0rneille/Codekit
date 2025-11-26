@@ -11,18 +11,37 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.tab__el a{
+    display: block;
+}
 .tab__el {
     padding: 10px;
 }
 
 .tab__content {
-    display: none;
+    /*display: none;*/
 }
 .tab__content--active{
-    display: block;
+   /* display: block;*/
 }
 .tab__el--active{
     background-color: white;
     color: blue;
     border: blue solid 3px;
 }
+
+.tab--a{ 
+    .tab__content{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .tab__container{
+        position: relative;
+        overflow: hidden;
+    }
+    .tab__content--active{
+        opacity: 1;
+    }
+}  

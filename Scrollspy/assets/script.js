@@ -3,7 +3,7 @@
 const spyOption ={
     root:null,
     rootMargin:"0px",
-    treshold:0.9    
+    treshold:0.8    
 };
 
 const observer = new IntersectionObserver(ScrollSpy, spyOption);

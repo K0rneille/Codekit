@@ -6,6 +6,7 @@ const next = document.querySelector(".slider__btn--next");
 
 
     next.addEventListener("click", nextslide)
+    previous.addEventListener("click",prevslide)
    /* previous.addEventListener("click", prevslide)*/
 
 
@@ -37,12 +38,9 @@ function nextslide (){
 
 
 
-
-
-
 function prevslide (){
     const slideractive = document.querySelector(".slider__el--active")
-    const prevelement = slideractive.previousElementSiblingElementSibling;
+    const prevelement = slideractive.previousElementSibling;
     console.log(prevelement)
     slideractive.classList.remove("slider__el--active");
 

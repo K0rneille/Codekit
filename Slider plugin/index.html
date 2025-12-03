@@ -4,52 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>change the title</title>
-    <script src="assets/script.js" defer></script>    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"defer></script>
     <link rel="stylesheet" href="assets/style.css">
-
+    <script src="assets/script.js" defer></script>   
 </head>
 <body>
-    <div class="slider">
-        <ul class="slider__control">
-            <li class="slider__btn slider__btn--previous">previous</li>      
-            <li class="slider__btn slider__btn--next">next</li>
-        </ul>
-        <ul class="slider__list">
-            <li id="slider1" class="slider__el slider__el--active">
-                <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
-                <div class="slider__content">
-                    <h2>Titre 1</h2>
-                    <p>lorem ipsum dolor opsi tamet</p>
-                </div>
-            </li>
-            <li id="slider2" class="slider__el">
-                <div class="slider__content">
-                    <h2>Titre 2</h2>
-                    <p>lorem ipsum dolor opsi tamet</p>
-                </div>
-                <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
-            </li>
-            <li id="slider3" class="slider__el">
-                <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
-                <div class="slider__content">
-                    <h2>Titre 3</h2>
-                    <p>lorem ipsum dolor opsi tamet</p>
-                </div>
-            </li>
-            <li id="slider4" class="slider__el">
-                <div class="slider__content">
-                    <h2>Titre 4</h2>
-                    <p>lorem ipsum dolor opsi tamet</p>
-                </div>
-                <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
-            </li>
-        </ul>
-       
+
+<div class="slider splide">
+        <div class="splide__track">
+            <ul class="slider__list splide__list">
+                <li id="slider1" class="slider__el slider__el--active splide__slide">
+                    <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
+                    <div class="slider__content">
+                        <h2>Titre 1</h2>
+                        <p>lorem ipsum dolor opsi tamet</p>
+                    </div>
+                </li>
+                <li id="slider2" class="slider__el splide__slide">
+                    <div class="slider__content">
+                        <h2>Titre 2</h2>
+                        <p>lorem ipsum dolor opsi tamet</p>
+                    </div>
+                    <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
+                </li>
+                <li id="slider3" class="slider__el splide__slide">
+                    <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
+                    <div class="slider__content">
+                        <h2>Titre 3</h2>
+                        <p>lorem ipsum dolor opsi tamet</p>
+                    </div>
+                </li>
+                <li id="slider4" class="slider__el splide__slide">
+                    <div class="slider__content">
+                        <h2>Titre 4</h2>
+                        <p>lorem ipsum dolor opsi tamet</p>
+                    </div>
+                    <img src="assets/img/kevin-mueller-lHs2IZQTx5Y-unsplash.jpg" alt="homme dans la neige d'hiver">
+                </li>
+            </ul>
+       </div>
 
     </div>
-
     
 </body>
 </html>

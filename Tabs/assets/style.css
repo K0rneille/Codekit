@@ -1,76 +1,69 @@
 body{
-    font-family: sans-serif;
+    height: 8000px;
     margin: 0;
-    line-height: 1.4;
-    font-size: 16px;
-    background-color: rgb(205, 201, 201);
-    box-sizing: border-box;
+    /* pour simuler le scroll */
 }
 
-
-.Tabs{
-    margin:0 5%;
+.tab__nav {
     display: flex;
-    flex-direction: column;
-}
-
-.Tabs__element{
-    color: black;
-    text-decoration: none;
-    font-weight: 600;   
-    padding-top: 8px;
-    display: flex;
-    width: 100px;
-    height: 30px;
-    list-style: none;
-    background-color: rgb(222, 222, 222);
-    justify-content: center;
-}
-li{
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-
-.Tabs__element--active{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    background-color: white;
-    height: 40px;
-    
+.tab__el a{
+    display: block  ;
 }
-
-.Tabs__menu{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 0;
-    margin-bottom: 0;
-}
-
-.Tabs__text{
-    margin: 0;
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-.text__bloc{
-    
-    /*display: none;*/
+.tab__el {
     padding: 10px;
+}
+
+.tab__content {
+    /*display: none;*/
+}
+.tab__content--active{
+   /* display: block;*/
+}
+.tab__el--active{
     background-color: white;
-    width: 100%;
-    flex-shrink: 0;
-    box-sizing: border-box;
+    color: blue;
+    border: blue solid 3px;
 }
 
+.tab--a{ 
+    .tab__content{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .tab__container{
+        position: relative;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+    .tab__content--active{
+        opacity: 1;
+    }
+}  
 
-.text__title{
-    margin: 0;
-    padding: 20px 0 0 0 ;
+.tab--b{ 
+    .tab__content{
+        position: absolute;
+        top: 0;
+        left: 0 ;
+        transition: transform 0.3s;
+    }
+    .tab__container{
+        position: relative;
+        overflow: hidden;;
 
-}
+    }
+    .tab__content--active ~ .tab__content{
+        transform: translateX(100%);
+    }
+
+    :has(~.tab__content--active){
+        transform: translateX(-100%);
+    }
+}  

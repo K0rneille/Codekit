@@ -1,0 +1,70 @@
+body{
+    height: 8000px;
+    margin: 0;
+    /* pour simuler le scroll */
+}
+
+.tab__nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab__el a{
+    display: block  ;
+}
+.tab__el {
+    padding: 10px;
+}
+/*
+.tab__content {
+    display: none;
+}
+.tab__content--active{
+  display: block;
+}
+*/
+.tab__el--active{
+    background-color: white;
+    color: blue;
+    border: blue solid 3px;
+}
+
+.tab--a{ 
+    .tab__content{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .tab__container{
+        position: relative;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+    .tab__content--active{
+        opacity: 1;
+    }
+}  
+
+.tab--b{ 
+    .tab__content{
+        transform: translateY(100%);
+        position: absolute;
+        top: 0;
+        left: 0 ;
+        transition: transform 0.3s;
+
+    }
+    .tab__container{
+        position: relative;
+        overflow: hidden;;
+
+    }
+    .tab__content--active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}  
